@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스이벤트</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	
+	$(document).ready(function() {
+		
+		$("button.move").click(function(){
+			//이미지에 애니효과 부여 옆과 높낮이를 바꾼다.
+			$("img").animate({
+				left:'300px',
+				height:'300px',
+				width:'350px'
+			});
+		});
+		
+		$("button.init").click(function(){
+			$("img").animate({
+				left:'0px',
+				height:'100px',
+				width:'130px'
+			});
+		});
+	});
+</script>
+    <style>
+        .css_pic {
+            height: 430px;
+            text-align: center;
+        }
+
+       .css_pic img {
+            width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+	<button class="move">확대</button>
+    <button class="init">축소</button>
+    <p></p>
+    <img name="pic1" src="pic1.jpg" width="130" height="100" style="position:relative"/>
+    
+</body>
+</html>

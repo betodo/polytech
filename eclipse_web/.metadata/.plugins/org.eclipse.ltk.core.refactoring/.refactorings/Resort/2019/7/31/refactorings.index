@@ -1,0 +1,45 @@
+1564360184563	Rename type 'UseDB'
+1564360617790	Move 7 resources to 'Gongji'
+1564360822009	Move 'Gongi_list.jsp' to 'WEB-INF'
+1564360830543	Move 'Gongi_list.jsp' to 'WebContent'
+1564360947278	Rename resource 'Gongi_delete.jsp'
+1564360956161	Rename resource 'Gongi_insert.jsp'
+1564360965060	Rename resource 'Gongi_reinsert.jsp'
+1564360978764	Rename resource 'Gongi_write.jsp'
+1564360986357	Rename resource 'Gongi_view.jsp'
+1564360992634	Rename resource 'Gongi_update.jsp'
+1564361007594	Rename resource 'Gongi_list.jsp'
+1564361027828	Move 'Gongji_list.jsp' to 'Gongji'
+1564378204832	Move 6 resources to 'SmartEditor2'
+1564378216997	Delete element
+1564383256292	Move 'cos2.jar' to 'lib'
+1564383264207	Rename resource 'cos2.jar'
+1564387086040	Rename resource 'cos.jar'
+1564392529011	Delete element
+1564393977280	Delete elements
+1564398358184	Delete element
+1564398363256	Delete element
+1564398469273	Delete element
+1564399754873	Delete element
+1564400062615	Delete elements
+1564400227565	Delete element
+1564400229115	Delete element
+1564447594680	Delete element
+1564448017868	Rename resource 'Link_table.css'
+1564451672455	Copy file
+1564451695740	Copy file
+1564451705343	Delete element
+1564451721167	Copy file
+1564451736057	Copy file
+1564451755416	Copy file
+1564452104508	Rename resource 'Content'
+1564452122704	Rename resource 'Content_delete.jsp'
+1564452129623	Rename resource 'Content_insert.jsp'
+1564452136325	Rename resource 'Content_list.jsp'
+1564452142743	Rename resource 'Content_update.jsp'
+1564452148472	Rename resource 'Content_view.jsp'
+1564452154477	Rename resource 'Content_write.jsp'
+1564452486776	Rename type 'UseDB_Content'
+1564464764157	Delete element
+1564551439192	Rename resource 'Resert_insert.jsp'
+1564551448171	Rename resource 'Resert_write.jsp'

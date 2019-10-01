@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스이벤트</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	var n = 0;
+	$(document).ready(function() {
+		//클래스로 스타일을 변경하지 않고
+		//바로 스타일을 css로 지정할수 있다.
+		$("button").click(function(){
+			$("p").css({"background-color":"yellow", "font-size":"200%"});
+			
+		});
+		
+	});
+</script>
+
+</head>
+<body>
+	<p>김길동</p>
+    <div>02-123-4567</div>
+    <p>이길동</p>
+    <div>042-567-2929</div>
+    <p>홍길동</p>
+    <div>051-278-9485</div>
+    <br><br>
+    <button>이름 강조</button>
+
+</body>
+</html>

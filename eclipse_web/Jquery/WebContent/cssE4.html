@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스이벤트</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	
+	$(document).ready(function() {
+		var xWidth = 100;//기본 박스의 크기를 준다
+		var yHeight = 100;
+		//박스 선택시 높이 넓이 스타일 속성값을 바로 지정할수 있다.
+		//클래스 안에 속성값이 중복되도 함수에서 지정한게 우선순위
+		$("div").click(function(){
+			$(this).width(xWidth).addClass("box");
+			$(this).height(yHeight).addClass("box");
+			xWidth=xWidth-10;
+			yHeight=yHeight-10;
+		});
+		
+	});
+</script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 5px;
+            background: yellow;
+        }
+        .box { 
+            background: red; 
+        }
+    </style>
+</head>
+<body>
+	<div>박스1</div>
+    <div>박스2</div>
+    <div>박스3</div>
+    <div>박스4</div>
+    <div>박스5</div>
+
+</body>
+</html>

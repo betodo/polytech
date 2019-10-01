@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스이벤트</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	
+	$(document).ready(function() {
+		
+		//버튼 크기스 크기를 바꿔주는데 애니매이션으로 할 수 있다
+		$("button.b1").click(function(){
+			$("img").animate({width:'100px'}); //이미지 태그에 애니매이션 주는데
+			//넓이를 변경
+		});
+		
+		$("button.b2").click(function(){
+			$("img").animate({width:'200px'});
+		});
+		
+		$("button.b3").click(function(){
+			$("img").animate({width:'300px'});
+		});
+	});
+</script>
+    <style>
+        .css_pic {
+            height: 430px;
+            text-align: center;
+        }
+
+       .css_pic img {
+            width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+	<div class="css_pic">
+        버튼을 누르면 그림의 크기가 바뀝니다.</p>
+        <button class="b1">가로 100픽셀</button>
+        <button class="b2">가로 200픽셀</button>
+        <button class="b3">가로 300픽셀</button><br><br>
+        <img name="pic1" src="pic1.jpg"/>
+    </div>
+
+
+</body>
+</html>

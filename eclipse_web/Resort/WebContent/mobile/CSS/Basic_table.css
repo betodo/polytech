@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* <style> */
+    #basicTB {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 1em;
+    }
+	
+	#basicTB td,th{
+		width:fit-content;
+	}
+	
+    #basicTB td,
+    #basicTB thead th {
+        border: 1px solid #ddd;
+        padding: 0.5rem;
+    }
+    
+	 #basicTB tbody th {
+        border: 1px solid #ddd;
+        padding: 1rem;
+/*         width: 10em; */
+    }
+    
+    #basicTB tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #basicTB tr:hover {
+        background-color: #ddd;
+    }
+
+    #basicTB thead th {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: left;
+        background-color: #424242;;
+        color: white;
+    }
+/* </style> */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스이벤트</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	
+	$(document).ready(function() {
+		//페이드 관련 메소드들
+		$("#out").click(function(){
+			$("img").fadeOut("slow");//영화의 페이드 아웃처럼 사라짐
+		});
+		
+		$("#in").click(function(){
+			$("img").fadeIn("slow");//페이드 아웃 반대
+		});
+		
+		$("#toggle").click(function(){
+			$("img").fadeToggle("slow");//페인아웃번갈아
+		});
+		
+		$("#to50").click(function(){
+			$("img").fadeTo("slow", 0.5);//투명도를 지정해줄수 잇음
+		});
+		$("#to10").click(function(){
+			$("img").fadeTo("slow", 0.1);
+		});
+		$("#to100").click(function(){
+			$("img").fadeTo("slow", 1.0);
+		});
+	});
+</script>
+</head>
+<body>
+	<button id="out">fadeOut</button>
+    <button id="in">fadeIn</button>
+    <button id="toggle">fadeToggle</button>
+    <button id="to50">opacity 50%</button>
+    <button id="to10">opacity 90%</button>
+    <button id="to100">opacity 0%</button>
+    <p></p>
+    <img name="pic1" src="pic1.jpg"/>
+
+
+    
+</body>
+</html>

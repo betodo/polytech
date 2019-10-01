@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="json[i].name"/>
+		<item key="wrap" value="false"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="true"/>
+		<list key="findhistory">
+			<item value="&quot;야&quot;"/>
+			<item value="doc"/>
+			<item value="string"/>
+			<item value="key"/>
+			<item value="pty"/>
+			<item value="&gt;"/>
+			<item value="th"/>
+			<item value="map_ma"/>
+			<item value="map_maa"/>
+			<item value="Screen"/>
+			<item value="screenShow"/>
+			<item value="scrrenS"/>
+			<item value="bln_login"/>
+			<item value="lastDate"/>
+			<item value="bln_cookie"/>
+		</list>
+		<list key="replacehistory">
+			<item value="json[i].name"/>
+			<item value="elmt"/>
+			<item value="String"/>
+			<item value="wd"/>
+			<item value="&gt;&lt;%="/>
+			<item value="td"/>
+			<item value="bln_cookie"/>
+			<item value="#pagination"/>
+			<item value="Gongji_list"/>
+			<item value="gongji"/>
+			<item value="file2"/>
+			<item value="px"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="576"/>
+		<item key="DIALOG_Y_ORIGIN" value="311"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

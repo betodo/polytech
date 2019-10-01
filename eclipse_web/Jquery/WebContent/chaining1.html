@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스이벤트</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	function move(obj, time) {
+		//자바스크림 함수 내에서도 제이쿼리 사용가능
+		//오브텍트와 숫자를 매개변수로 함수 실행
+		$(obj).stop().animate({ //오브젝트의 애니메이션을 멈춘고 움직인다
+			left : -350,
+			top : 0
+		}, time);
+	}
+	function back(css) {//위치를 초기화 시키는 것과 같은효과
+		$(css).stop().animate({
+			left : 0,
+			top : 0
+		});
+	}
+</script>
+<style>
+.moving {
+	border: 1px solid #000000;
+	margin: 20px auto 0 auto;
+	text-align: right;
+	width: 550px;
+}
+
+.moving img {
+	cursor: pointer;
+	position: relative;
+}
+</style>
+
+</head>
+<body>
+	<div class="init">
+        <button type="button" onclick="back('.moving img')">초기화 상태</button><br>
+    </div>
+    <div class="moving">
+        <img onclick="move(this, 6000)" src="pic1.jpg"/><br>
+        <img onclick="move(this, 3000)" src="pic2.jpg"/><br>
+        <img onclick="move(this, 1000)" src="pic3.jpg"/><br>
+    </div>
+
+</body>
+
+
+</html>

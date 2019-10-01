@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	//요청을 해서 받는다
+	$.ajax({
+		url : "http://localhost:8090/Ajax/AllviewDB.jsp",//클라이언트가 요청을 보낼 서버의 url주소
+		//data: { name: "홍길동" },//http 요청과 함께 서버로 보낼 데이터
+		type : "GET", //http요청방식 (get,post)
+		dataType : "json" //서버에서 보내줄 데이터의 타입
+	})
+
+	// http 요청이 성공하면 요청한 데이터가 done()메소드로 전달됨
+	.done(function(json) {
+		//console.log(json);
+		//제이슨의 배열에 이름을 (exams) 정해주었다면 요렇게
+// 		for (var i=0; i<json.exams.length;i++){
+// 			console.log(json.exams[i]);
+// 			//$("<td>").text(json)
+// 		}
+		
+		//그냥 배열로만 했다면 요렇게
+		for (var i=0; i<json.length;i++){
+			//console.log(json[i]);
+			
+			//조금 무식하게 하는 법
+// 			$("<tr>").appendTo("tbody");
+// 			$("<td>").text(json[i].name).appendTo("tbody");
+// 			$("</td>").appendTo("tbody");
+// 			$("<td>").text(json[i].id).appendTo("tbody");
+// 			$("</td>").appendTo("tbody");
+// 			$("<td>").text(json[i].kor).appendTo("tbody");
+// 			$("</td>").appendTo("tbody");
+// 			$("<td>").text(json[i].eng).appendTo("tbody");
+// 			$("</td>").appendTo("tbody");
+// 			$("<td>").text(json[i].mat).appendTo("tbody");
+// 			$("</td>").appendTo("tbody");
+// 			$("<td>").text(json[i].sum).appendTo("tbody");
+// 			$("</td>").appendTo("tbody");
+// 			$("<td>").text(json[i].avg).appendTo("tbody");
+// 			$("</td>").appendTo("tbody");
+// 			$("</tr>").appendTo("tbody");
+
+			//태그 tr에다가 각각 td와 밸류를 붙여서 밑에 tbody에 넣는다
+			//닫는 태그는 안해도 되는 듯
+			$("<tr>")
+			.append($("<td>").text(json[i].name))
+			.append($("<td>").html(json[i].id))
+			.append($("<td>").html(json[i].kor))
+			.append($("<td>").html(json[i].eng))
+			.append($("<td>").html(json[i].mat))
+			.append($("<td>").html(json[i].sum))
+			.append($("<td>").html(json[i].avg))
+			.appendTo("tbody");
+			
+			
+		}
+// 		text(json.title).appendTo("body");
+// 		$("<div class=\"content\">").html(json.html).appendTo("body");
+	})
+	
+	// http 요청이 실해하면 오류와 상태에 관한 정보가 fail()메소드로 전달됨
+	.fail(function(xhr, status, errorThrown){
+		console.log(xhr, status, errorThrown);
+		$("#text").html("오류가 발생했습니다.<br>")
+		.append("오류명: " + errorThrown + "<br>")
+		.append("상태: "+status);
+	})
+	
+	.always(function(xhr, status){
+		console.log(xhr, status);
+		$("#text").html("요청이 완료되었습니다.")
+	})
+</script>
+<style>
+	#dataTable{
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	#dataTable th, td{
+		border: 1px solid black;
+		padding: 0.5em;
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+	<table id="dataTable">
+		<thead>
+			<tr>
+				<th>이름</th>
+				<th>학번</th>
+				<th>국어</th>
+				<th>영여</th>
+				<th>수학</th>
+				<th>합계</th>
+				<th>평균</th>
+			</tr>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+	<div id=text></div>
+</body>
+</html>

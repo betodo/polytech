@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+#pagination {
+	list-style:none;
+/* 	float:left; */
+	display:inline;
+    padding: 0rem;
+}
+#pagination li {
+/* 	float:left; */
+	display:inline;
+}
+#pagination li a {
+/* 	float:left; */
+	padding:0.3rem;
+	margin-right:1rem;
+/* 	width:1em; */
+	color:#000;
+	font:bold 1.3rem tahoma;
+	border:1px solid #eee;
+	text-align:center;
+	text-decoration:none;
+}
+#pagination li a:hover, #pagination li a:focus {
+	color:#fff;
+	border:1px solid #f40;
+	background-color:#f40;
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+
+
+$.ajax({
+	url:"http://localhost:8090/Ajax/ajax.jsp",//클라이언트가 요청을 보낼 서버의 url주소
+	data: { name: "홍길동" },//http 요청과 함께 서버로 보낼 데이터
+	type: "GET",	//http요청방식 (get,post)
+	dataType:"json" //서버에서 보내줄 데이터의 타입
+})
+
+//$.ajax가 실행되면 ajax.jsp에 데이터를 보냄(데이터 요청)
+//->ajax.jsp가 데이터를 받아서 json 만들어서
+//다시 여따 반응(데이터요청 성공)
+
+
+// http 요청이 성공하면 요청한 데이터가 done()메소드로 전달됨
+.done(function(json){
+	console.log(json);
+	//<h1>태그+json으로 받은 애들중 title의 값을 걍 텍스트로 읽어서 html 태그 <body>추가함
+	$("<h1>").text(json.title).appendTo("body");
+	//얘는 html로 읽기 때문에 태그같은게 있으면 태그로 읽음
+	$("<div class=\"content\">").html(json.html).appendTo("body");
+})
+
+// http 요청이 실해하면 오류와 상태에 관한 정보가 fail()메소드로 전달됨
+.fail(function(xhr, status, errorThrown){
+	console.log(xhr, status, errorThrown);
+	$("#text").html("오류가 발생했습니다.<br>")
+	.append("오류명: " + errorThrown + "<br>")
+	.append("상태: "+status);
+})
+
+// http 요청이 성공하거나 실패하는 것에 상관없이 언제나 always()메소드가 실행됨
+.always(function(xhr, status){
+	console.log(xhr, status);
+	$("#text").html("요청이 완료되었습니다.")
+})
+</script>
+</head>
+<body>
+<div id="text"></div>
+</body>
+</html>

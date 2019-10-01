@@ -1,0 +1,13 @@
+127.0.0.1 - - [10/Aug/2019:20:33:32 +0900] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:34 +0900] "GET /Resort/Comment/Comment_list.jsp HTTP/1.1" 200 7135
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:34 +0900] "GET /Resort/Comment/img/file.png HTTP/1.1" 404 1048
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:34 +0900] "GET /Resort/Comment/img/re.png HTTP/1.1" 404 1044
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:34 +0900] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:58 +0900] "GET /Resort/main.jsp HTTP/1.1" 200 3062
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:58 +0900] "GET /Resort/img/resort2.jpg HTTP/1.1" 200 102822
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:58 +0900] "GET /Resort/img/resort.jpg HTTP/1.1" 200 56248
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:58 +0900] "GET /Resort/img/diningroom.jpg HTTP/1.1" 200 128163
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:58 +0900] "GET /Resort/img/resort3.jpg HTTP/1.1" 200 166450
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:58 +0900] "GET /Resort/img/show.jpg HTTP/1.1" 200 10177
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:33:58 +0900] "GET /Resort/img/food.jpg HTTP/1.1" 200 13413
+0:0:0:0:0:0:0:1 - - [10/Aug/2019:20:34:04 +0900] "GET /Resort/main.html HTTP/1.1" 200 2605

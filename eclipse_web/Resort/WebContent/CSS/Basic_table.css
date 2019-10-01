@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* <style> */
+    #basicTB {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #basicTB td,
+    #basicTB thead th {
+        border: 1px solid #ddd;
+        padding: 1em;
+    }
+    
+	 #basicTB tbody th {
+        border: 1px solid #ddd;
+        padding: 1em;
+        width: 10em;
+    }
+    
+    #basicTB tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #basicTB tr:hover {
+        background-color: #ddd;
+    }
+
+    #basicTB thead th {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: left;
+        background-color: #424242;;
+        color: white;
+    }
+/* </style> */
